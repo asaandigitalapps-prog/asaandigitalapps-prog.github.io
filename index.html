@@ -3,8 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AsaanDigital Applications — Business made asaan</title>
-<meta name="description" content="AsaanDigital Applications builds simple, powerful business apps for Pakistani entrepreneurs. Khata, udhaar, invoicing, qist, kameti, WhatsApp AI assistants and more — made asaan.">
+<title>AsaanDigital Applications | Hazir WhatsApp AI receptionist and Karobar360 khata app, Pakistan</title>
+<meta name="description" content="AsaanDigital Applications, Islamabad, builds simple tools for Pakistani businesses: Hazir answers your customers on WhatsApp and books, orders and tracks payments; Karobar360 keeps your khata, udhaar and invoices.">
+<link rel="canonical" href="https://asaandigitalsolutions.com/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="AsaanDigital Applications">
+<meta property="og:title" content="AsaanDigital Applications: Business made asaan">
+<meta property="og:description" content="Hazir, the WhatsApp AI receptionist for businesses in Pakistan, and Karobar360, the digital khata.">
+<meta property="og:url" content="https://asaandigitalsolutions.com/">
+<meta property="og:image" content="https://hazir.asaandigitalsolutions.com/img/hazir-share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AsaanDigital Applications","url":"https://asaandigitalsolutions.com/","email":"info@asaandigitalsolutions.com","telephone":"+923225173035","address":{"@type":"PostalAddress","addressLocality":"Islamabad","addressCountry":"PK"},"sameAs":["https://hazir.asaandigitalsolutions.com/","https://play.google.com/store/apps/details?id=com.asaandigital.karobar360"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -68,7 +76,11 @@
   }
   .app-icon{width:86px;height:86px;border-radius:20px;background:linear-gradient(135deg,#124A52,var(--teal-dark));
     display:flex;align-items:center;justify-content:center;border:1px solid rgba(46,230,168,.4);flex-shrink:0}
-  .app-icon span{font-weight:800;font-size:2rem;color:var(--mint)}
+  .app-icon svg{width:46px;height:46px}
+  .price{margin-top:12px;font-size:.9rem;color:var(--text)}
+  .price b{color:var(--mint)}
+  .price a{white-space:nowrap}
+  .card-actions{display:flex;flex-direction:column;gap:10px}
   .app-card h3{font-size:1.25rem;font-weight:700}
   .app-card .tagline{color:var(--grey-soft);font-size:.95rem;margin-top:4px}
   .chips{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
@@ -83,7 +95,7 @@
   /* features */
   .grid{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   .feat{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:24px}
-  .feat .tick{color:var(--mint);font-size:1.3rem;font-weight:800}
+  .feat .tick{width:28px;height:28px;color:var(--mint)}
   .feat h3{font-size:1.02rem;font-weight:600;margin:10px 0 6px}
   .feat p{color:var(--grey-soft);font-size:.9rem}
 
@@ -106,17 +118,29 @@
     .hero{grid-template-columns:1fr;padding-top:40px}
     .hero-mark{order:-1}
     .grid{grid-template-columns:1fr}
-    .app-card{grid-template-columns:auto 1fr}
+    .app-card{grid-template-columns:1fr;gap:16px;padding:22px}
+    .app-icon{width:60px;height:60px;border-radius:16px}.app-icon svg{width:34px;height:34px}
+    .hero-mark svg{width:140px}
     .app-card .btn{grid-column:1/-1;text-align:center}
-    .navlinks{display:none}
+    .nav{flex-wrap:wrap;row-gap:10px}
+    .navlinks{flex:1 0 100%;gap:18px;overflow-x:auto;white-space:nowrap;padding-bottom:4px}
+    .card-actions{grid-column:1/-1}
+    .card-actions .btn{text-align:center}
   }
+  .about p{color:var(--grey-soft);max-width:44rem;margin-top:10px}
+  .trust-links{margin-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+  .trust-links a{display:block;padding:12px 14px;border:1px solid rgba(46,230,168,.25);border-radius:12px;font-weight:600}
+  .trust-links a:hover{border-color:var(--mint);text-decoration:none}
+  .trust-links span{display:block;color:var(--grey-soft);font-weight:400;font-size:.85rem}
+  .contact dl{margin-top:14px;display:grid;grid-template-columns:auto 1fr;gap:6px 16px;color:var(--grey-soft)}
+  .contact dd{color:var(--text)}
 </style>
 </head>
 <body>
 
 <header class="wrap">
   <nav class="nav">
-    <a class="brand" href="#">
+    <a class="brand" href="/" aria-label="AsaanDigital home">
       <svg width="34" height="34" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <rect width="512" height="512" rx="110" fill="#0D3B42"/>
         <g stroke-linecap="round" fill="none">
@@ -127,9 +151,9 @@
       Asaan<span class="digital">Digital</span>
     </a>
     <div class="navlinks">
-      <a href="#apps">Our apps</a>
-      <a href="#why">Why AsaanDigital</a>
-      <a href="#hazir-legal">Hazir legal</a>
+      <a href="#apps">Products</a>
+      <a href="#trust">Trust &amp; Privacy</a>
+      <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -140,10 +164,10 @@
   <div class="hero">
     <div>
       <h1>Business made <span class="mint">asaan.</span></h1>
-      <p class="lead">AsaanDigital Applications builds simple, powerful tools for Pakistani shopkeepers, traders and entrepreneurs — khata, udhaar, invoicing, qist, kameti and more. No complicated setup. No accounting degree required.</p>
+      <p class="lead">AsaanDigital Applications builds simple tools for businesses in Pakistan. <strong>Hazir</strong> answers your customers on WhatsApp, day and night. <strong>Karobar360</strong> keeps your khata, udhaar and invoices in one place.</p>
       <div class="cta">
-        <a class="btn btn-mint" href="#apps">See our apps</a>
-        <a class="btn btn-ghost" href="mailto:info@asaandigitalsolutions.com">Get in touch</a>
+        <a class="btn btn-mint" href="https://wa.me/923225173035?text=Hi%20Hazir">Try Hazir on WhatsApp</a>
+        <a class="btn btn-ghost" href="#apps">See our products</a>
       </div>
     </div>
     <div class="hero-mark">
@@ -161,21 +185,26 @@
   <section id="apps">
     <span class="eyebrow">Our apps</span>
    
-    <a class="app-card" href="https://hazir.asaandigitalsolutions.com/" target="_blank" rel="noopener" aria-label="Open Hazir — WhatsApp AI Assistant for businesses">
-      <div class="app-icon"><span>H</span></div>
+    <h2>Two tools, one aim: less work for you</h2>
+    <div class="app-card">
+      <div class="app-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2EE6A8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18.5V7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H8z"/><path d="M8.5 9.5h7M8.5 12.5h4.5"/></svg></div>
       <div>
-        <h3>Hazir — WhatsApp AI Assistant</h3>
-        <p class="tagline">An AI assistant for your WhatsApp Business number. Hazir answers customers, shares prices, takes bookings and orders, and hands over to your staff when needed.</p>
+        <h3>Hazir — WhatsApp AI receptionist</h3>
+        <p class="tagline">Hazir answers your customers on your own WhatsApp number in English, Urdu and Roman Urdu, books appointments and orders, sends reminders, asks for payment straight to your own JazzCash, Easypaisa or bank account, and hands over to your staff when needed. Hazir never holds your money.</p>
         <div class="chips">
           <span class="chip">WhatsApp</span><span class="chip">AI replies</span><span class="chip">Bookings</span>
-          <span class="chip">Orders</span><span class="chip">Payments</span><span class="chip">Staff handover</span>
+          <span class="chip">Orders</span><span class="chip">Payment tracking</span><span class="chip">Staff handover</span>
         </div>
+        <p class="price">From <b>PKR 10,000 a month</b> (up to 200 customers). Founding offer for the first businesses. WhatsApp charges by Meta are separate. <a href="https://hazir.asaandigitalsolutions.com/#prices">See all prices</a></p>
       </div>
-      <span class="btn btn-mint">Open Hazir</span>
-    </a>
+      <div class="card-actions">
+        <a class="btn btn-mint" href="https://wa.me/923225173035?text=Hi%20Hazir">Try Hazir on WhatsApp</a>
+        <a class="btn btn-ghost" href="https://hazir.asaandigitalsolutions.com/">About Hazir</a>
+      </div>
+    </div>
 
     <div class="app-card">
-      <div class="app-icon"><span>K</span></div>
+      <div class="app-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#2EE6A8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11M9 8h6M9 11h4"/></svg></div>
       <div>
         <h3>Karobar360 — Digital Khata</h3>
         <p class="tagline">AI-powered business &amp; personal finance manager. Track sales, expenses, invoices and payments — all in one place.</p>
@@ -193,91 +222,68 @@
     <h2>Everything should be this easy</h2>
     <div class="grid">
       <div class="feat">
-        <div class="tick">&#10003;</div>
+        <svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.7 2.7L16 9.8"/></svg>
         <h3>Built for local business</h3>
         <p>Khata, udhaar, qist and kameti — we build around how business actually works in Pakistan, not imported templates.</p>
       </div>
       <div class="feat">
-        <div class="tick">&#10003;</div>
+        <svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.7 2.7L16 9.8"/></svg>
         <h3>Simple by design</h3>
         <p>If it takes a manual to use, we redesign it. Every screen is made for busy shopkeepers, not accountants.</p>
       </div>
       <div class="feat">
-        <div class="tick">&#10003;</div>
+        <svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.7 2.7L16 9.8"/></svg>
         <h3>Your data, respected</h3>
         <p>Clear privacy policies and easy account deletion for every app. No surprises, no hidden data games.</p>
       </div>
     </div>
   </section>
 
-  <section id="hazir-legal">
-    <span class="eyebrow">Hazir legal</span>
-    <h2>Hazir — legal information</h2>
-    <p class="legal-intro">Hazir is a WhatsApp assistant that answers customers on behalf of small businesses. Here is a short summary of how Hazir handles data. The full documents are linked below and take priority over this summary.</p>
-
+  <section id="trust">
+    <span class="eyebrow">Trust &amp; Privacy</span>
+    <h2>Your business data stays yours</h2>
     <div class="grid">
-      <div class="feat">
-        <div class="tick">&#10003;</div>
-        <h3>Who is responsible</h3>
-        <p>Hazir is a service by AsaanDigital Applications, Pakistan. When you message a business that uses Hazir, that business decides how your messages are used and we process them on its behalf. For business owners and staff, we are responsible for their account data.</p>
-      </div>
-      <div class="feat">
-        <div class="tick">&#10003;</div>
-        <h3>You are talking to an AI</h3>
-        <p>Replies may be written by an AI assistant. You can ask if it is an AI and ask for a person at any time. It only states prices and policies the business has provided, and it gives no medical, legal or financial advice.</p>
-      </div>
-      <div class="feat">
-        <div class="tick">&#10003;</div>
-        <h3>Data we process</h3>
-        <p>Your WhatsApp number and profile name, your messages, and booking, order and payment-request details. Voice notes are turned into text and the recording is not kept. We never ask for passwords, PINs or card numbers, we do not sell personal data and we do not use it for advertising.</p>
-      </div>
-      <div class="feat">
-        <div class="tick">&#10003;</div>
-        <h3>Payments</h3>
-        <p>Hazir never receives or holds your money. You pay the business directly, and the business confirms when it has received the payment.</p>
-      </div>
-      <div class="feat">
-        <div class="tick">&#10003;</div>
-        <h3>Service providers</h3>
-        <p>Meta (WhatsApp Business Platform), Anthropic (Claude API, for AI replies), OpenAI (speech-to-text for voice notes), and hosting and network providers such as Cloudflare. Data sent through the AI APIs is not used to train their models under their API terms.</p>
-      </div>
-      <div class="feat">
-        <div class="tick">&#10003;</div>
-        <h3>How long we keep data</h3>
-        <p>Conversations, bookings and orders are kept for up to 12 months, payment records for 24 months. When a business stops using Hazir, its data is returned on request and deleted within 90 days.</p>
-      </div>
+      <div class="feat"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.7 2.7L16 9.8"/></svg><h3>We never hold your money</h3><p>Customers pay you directly. Hazir only asks for payment and helps you check it.</p></div>
+      <div class="feat"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.7 2.7L16 9.8"/></svg><h3>Official WhatsApp platform</h3><p>Hazir uses Meta's official WhatsApp Business Platform, never an unofficial app, so your number is not put at risk.</p></div>
+      <div class="feat"><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.7 2.7L16 9.8"/></svg><h3>Delete any time</h3><p>Every app has a clear privacy policy and an easy way to export or delete your data.</p></div>
     </div>
+    <div class="trust-links">
+      <a href="https://hazir.asaandigitalsolutions.com/security">Hazir security<span>How chats and customer data are protected</span></a>
+      <a href="https://asaandigitalapps-prog.github.io/hazir-legal/privacy.html">Hazir privacy policy<span>What data Hazir handles and why</span></a>
+      <a href="https://asaandigitalapps-prog.github.io/hazir-legal/data-deletion.html">Hazir data deletion<span>How to ask us to delete your data</span></a>
+      <a href="https://hazir.asaandigitalsolutions.com/terms">Hazir terms of use<span>For businesses that use Hazir</span></a>
+      <a href="https://asaandigitalapps-prog.github.io/karobar360-privacy-policy/">Karobar360 privacy policy<span>How the khata app handles your data</span></a>
+      <a href="https://asaandigitalapps-prog.github.io/karobar360-privacy-policy/account-deletion.html">Karobar360 account deletion<span>Delete your Karobar360 account</span></a>
+    </div>
+  </section>
 
-    <div class="legal-box">
-      <h3>Your rights, opting out and deletion</h3>
-      <p>You may ask to access, correct or delete your data. Send <strong>STOP</strong> to a business's WhatsApp number to stop messages, and <strong>START</strong> to resume. To request deletion, email <a href="mailto:info@asaandigitalsolutions.com?subject=Hazir%20data%20deletion%20request">info@asaandigitalsolutions.com</a> with the subject &ldquo;Hazir data deletion request&rdquo;, your WhatsApp number and the name of the business you messaged. We reply within 30 days.</p>
-      <p>Hazir is not intended for people under 18.</p>
-    </div>
-
-    <div class="legal-actions">
-      <a class="btn btn-mint" href="https://asaandigitalapps-prog.github.io/hazir-legal/privacy.html" target="_blank" rel="noopener">Read the full Privacy Policy</a>
-      <a class="btn btn-ghost" href="https://asaandigitalapps-prog.github.io/hazir-legal/data-deletion.html" target="_blank" rel="noopener">Data Deletion Instructions</a>
-    </div>
-    <p class="legal-date">Hazir legal documents effective 5 November 2026 &middot; last updated 7 November 2026.</p>
+  <section id="about" class="about">
+    <span class="eyebrow">About</span>
+    <h2>Software for the way Pakistan does business</h2>
+    <p>AsaanDigital Applications is a software business based in Islamabad, Pakistan. We build apps for shopkeepers, salons, workshops and other small businesses that run on WhatsApp, khata and trust, not on complicated systems.</p>
+    <p>Our rule is simple: if a busy owner needs a manual to use it, we redesign it. Our apps work on an ordinary phone, and Hazir talks to your customers in English, Urdu and Roman Urdu.</p>
   </section>
 
   <section id="contact" class="contact">
     <span class="eyebrow">Contact</span>
     <h2>Talk to us</h2>
-    <p>Questions, feedback or feature ideas? We read everything.</p>
-    <p style="margin-top:14px">
-      Email: <a href="mailto:info@asaandigitalsolutions.com">info@asaandigitalsolutions.com</a>
-    </p>
+    <p>Questions, a demo for your business, or feedback? We read everything.</p>
+    <dl>
+      <dt>WhatsApp</dt><dd><a href="https://wa.me/923225173035?text=Hi%20Hazir">+92 322 5173035</a> (our only official number)</dd>
+      <dt>Email</dt><dd><a href="mailto:info@asaandigitalsolutions.com">info@asaandigitalsolutions.com</a></dd>
+      <dt>Location</dt><dd>Islamabad, Pakistan</dd>
+    </dl>
   </section>
 
 </main>
 
 <footer>
   <div class="wrap foot">
-    <span>&copy; 2026 AsaanDigital Applications. All rights reserved.</span>
+    <span>&copy; 2026 AsaanDigital Applications, Islamabad, Pakistan &middot; +92 322 5173035 &middot; info@asaandigitalsolutions.com</span>
     <div class="links">
-      <a href="https://asaandigitalapps-prog.github.io/karobar360-privacy-policy/">Privacy Policy</a>
-      <a href="https://asaandigitalapps-prog.github.io/karobar360-privacy-policy/account-deletion.html">Account Deletion</a>
+      <a href="#trust">Trust &amp; Privacy</a>
+      <a href="https://asaandigitalapps-prog.github.io/karobar360-privacy-policy/">Karobar360 Privacy</a>
+      <a href="https://asaandigitalapps-prog.github.io/karobar360-privacy-policy/account-deletion.html">Karobar360 Account Deletion</a>
       <a href="https://asaandigitalapps-prog.github.io/hazir-legal/privacy.html">Hazir Privacy</a>
       <a href="https://asaandigitalapps-prog.github.io/hazir-legal/data-deletion.html">Hazir Data Deletion</a>
       <a href="mailto:info@asaandigitalsolutions.com">Support</a>
